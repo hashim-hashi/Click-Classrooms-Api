@@ -277,3 +277,17 @@ C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\obj
 C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\obj\Debug\net8.0\ref\ClickClassroomsBackend.dll
 C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\obj\Debug\net8.0\ClickClassroomsBackend.sourcelink.json
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.AspNetCore.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\bin\Debug\net8.0\Serilog.Sinks.File.dll

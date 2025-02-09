@@ -1,0 +1,73 @@
+2025-02-09 14:32:52.187 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-09 14:32:52.740 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-09 14:32:52.748 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-09 14:32:52.751 +04:00 [INF] Hosting environment: Development
+2025-02-09 14:32:52.751 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-09 14:32:53.902 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-09 14:32:54.501 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 605.1598ms
+2025-02-09 14:32:54.823 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-09 14:32:55.371 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 549.563ms
+2025-02-09 14:34:28.779 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/auth/login - application/json 58
+2025-02-09 14:34:28.943 +04:00 [INF] CORS policy execution successful.
+2025-02-09 14:34:29.256 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-09 14:34:29.361 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-09 14:35:28.191 +04:00 [INF] Login attempt for user: hashim1@gmail.com
+2025-02-09 14:35:36.133 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-09 14:35:38.479 +04:00 [INF] Executed DbCommand (149ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-09 14:36:34.122 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-09 14:36:34.314 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 124943.8848ms
+2025-02-09 14:36:34.316 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-09 14:36:34.322 +04:00 [INF] HTTP POST /api/auth/login responded 200 in 125425.8879 ms
+2025-02-09 14:36:34.372 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/auth/login - 200 null application/json; charset=utf-8 125592.6989ms
+2025-02-09 14:36:58.983 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/auth/login - application/json 61
+2025-02-09 14:36:58.997 +04:00 [INF] CORS policy execution successful.
+2025-02-09 14:36:59.011 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-09 14:36:59.011 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-09 14:37:05.448 +04:00 [INF] Login attempt for user: hashim1111@gmail.com
+2025-02-09 14:37:10.004 +04:00 [INF] Executed DbCommand (47ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-09 14:37:14.825 +04:00 [WRN] Invalid login attempt for user: hashim1111@gmail.com
+2025-02-09 14:37:28.066 +04:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-02-09 14:37:28.068 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 29056.3857ms
+2025-02-09 14:37:28.069 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-09 14:37:28.070 +04:00 [INF] HTTP POST /api/auth/login responded 401 in 29073.5703 ms
+2025-02-09 14:37:28.073 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/auth/login - 401 null text/plain; charset=utf-8 29089.4606ms
+2025-02-09 14:43:47.032 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-09 14:43:47.317 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-09 14:43:47.322 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-09 14:43:47.323 +04:00 [INF] Hosting environment: Development
+2025-02-09 14:43:47.323 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-09 14:43:47.621 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-09 14:43:47.969 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 351.423ms
+2025-02-09 14:43:48.180 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-09 14:43:48.452 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 271.8411ms
+2025-02-09 14:44:09.347 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/auth/login - application/json 58
+2025-02-09 14:44:09.385 +04:00 [INF] CORS policy execution successful.
+2025-02-09 14:44:09.587 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-09 14:44:09.665 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-09 14:44:16.846 +04:00 [INF] Login attempt for user: hashim111@gmail.com
+2025-02-09 14:44:24.312 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-09 14:44:26.195 +04:00 [INF] Executed DbCommand (232ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-09 14:44:26.232 +04:00 [WRN] Invalid login attempt for user: hashim111@gmail.com
+2025-02-09 14:44:26.239 +04:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-02-09 14:44:26.247 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 16576.057ms
+2025-02-09 14:44:26.247 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-09 14:44:26.253 +04:00 [INF] HTTP POST /api/auth/login responded 401 in 16873.1974 ms
+2025-02-09 14:44:26.267 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/auth/login - 401 null text/plain; charset=utf-8 16919.9541ms
+2025-02-09 14:48:48.272 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-09 14:48:48.574 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-09 14:48:48.580 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-09 14:48:48.581 +04:00 [INF] Hosting environment: Development
+2025-02-09 14:48:48.581 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-09 14:48:49.122 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-09 14:48:49.445 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 327.4992ms
+2025-02-09 14:48:49.628 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-09 14:48:49.856 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 228.8666ms

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClickClassroomsBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6353aa0230781fcc25efe55e0c164057bb7033e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClickClassroomsBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClickClassroomsBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

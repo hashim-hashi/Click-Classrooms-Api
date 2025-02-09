@@ -4,18 +4,23 @@ using System.Text;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
+using ILogger = Serilog.ILogger;
 
 
 
-[Route("api/auth")]
 [ApiController]
+[Route("api/auth")]
 public class AuthContoller : ControllerBase
 {
     private readonly AppDbContext _context;
     public readonly IConfiguration _configuration; 
-    public AuthContoller(AppDbContext context, IConfiguration configuration){
+    private readonly ILogger _logger;
+    public AuthContoller(AppDbContext context, IConfiguration configuration)
+    {
         _context = context;
         _configuration = configuration;
+        _logger = Log.ForContext<AuthContoller>();
     }
     [HttpPost("register")]
     public async Task<IActionResult> Register([FromBody] User user)
@@ -33,10 +38,12 @@ public class AuthContoller : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest loginRequest)
     {
+        _logger.Information("Login attempt for user: {Email}", loginRequest.Email);
         var user = await _context.Users.FirstOrDefaultAsync(e => e.Email == loginRequest.Email);
-        if (user == null || !BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.PasswordHash))
+        if (user == null || !BCrypt.Net.BCrypt.Verify(loginRequest.Password, user.PasswordHash)){
+            _logger.Warning("Invalid login attempt for user: {Email}", loginRequest.Email);
             return Unauthorized("Invalid Email or Password");
-        
+        }
         var token = GenerateJwtToken(user);
 
         return Ok(new { token });
