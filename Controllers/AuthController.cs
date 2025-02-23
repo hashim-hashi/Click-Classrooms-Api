@@ -46,7 +46,7 @@ public class AuthContoller : ControllerBase
         }
         var token = GenerateJwtToken(user);
 
-        return Ok(new { token });
+        return Ok(new { token, user.Role });
     }
     
     private string GenerateJwtToken(User user)

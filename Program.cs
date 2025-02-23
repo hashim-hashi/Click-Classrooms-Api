@@ -7,10 +7,10 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
-builder.Logging.AddDebug();
-builder.Logging.AddEventLog();
+// builder.Logging.ClearProviders();
+// builder.Logging.AddConsole();
+// builder.Logging.AddDebug();
+// builder.Logging.AddEventLog();
 
 // Use Serilog for structured logging
 Log.Logger = new LoggerConfiguration()

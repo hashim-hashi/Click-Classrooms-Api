@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj": {}
+    "c:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj": {
+    "c:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj",
+        "projectUniqueName": "c:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj",
         "projectName": "ClickClassroomsBackend",
-        "projectPath": "C:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj",
+        "projectPath": "c:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\ClickClassroomsBackend.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\obj\\",
+        "outputPath": "c:\\Users\\Lenovo\\Desktop\\Sahla's Online Tution Project\\ClickClassroomsBackend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

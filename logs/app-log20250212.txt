@@ -1,0 +1,106 @@
+2025-02-12 23:44:46.813 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-12 23:44:47.312 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-12 23:44:47.319 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-12 23:44:47.323 +04:00 [INF] Hosting environment: Development
+2025-02-12 23:44:47.323 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-12 23:44:47.814 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-12 23:44:48.154 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 347.6145ms
+2025-02-12 23:44:48.738 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-12 23:44:49.116 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 379.5336ms
+2025-02-12 23:45:15.242 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-12 23:45:15.281 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:45:15.292 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 16.3696 ms
+2025-02-12 23:45:15.295 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 52.4778ms
+2025-02-12 23:45:15.300 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 49
+2025-02-12 23:45:15.307 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:45:15.563 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:45:15.635 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-12 23:45:45.800 +04:00 [INF] Login attempt for user: hashim1@gmail.com
+2025-02-12 23:45:47.600 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-12 23:45:50.087 +04:00 [INF] Executed DbCommand (279ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-12 23:45:51.259 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-12 23:45:51.388 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 35736.3979ms
+2025-02-12 23:45:51.392 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:45:51.399 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 36093.1435 ms
+2025-02-12 23:45:51.433 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 36132.9451ms
+2025-02-12 23:46:32.764 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-12 23:46:32.765 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:46:32.765 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.0178 ms
+2025-02-12 23:46:32.766 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 2.1325ms
+2025-02-12 23:46:32.773 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 48
+2025-02-12 23:46:32.781 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:46:32.786 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:46:32.787 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-12 23:46:41.663 +04:00 [INF] Login attempt for user: hashim1@gmai.com
+2025-02-12 23:46:41.754 +04:00 [INF] Executed DbCommand (25ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-12 23:46:41.757 +04:00 [WRN] Invalid login attempt for user: hashim1@gmai.com
+2025-02-12 23:46:41.760 +04:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-02-12 23:46:41.761 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 8973.8856ms
+2025-02-12 23:46:41.762 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:46:41.762 +04:00 [INF] HTTP POST /api/Auth/login responded 401 in 8981.9669 ms
+2025-02-12 23:46:41.763 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 401 null text/plain; charset=utf-8 8989.7218ms
+2025-02-12 23:46:55.954 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-12 23:46:55.956 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:46:55.957 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.1351 ms
+2025-02-12 23:46:55.958 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 4.0831ms
+2025-02-12 23:46:55.965 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 51
+2025-02-12 23:46:55.965 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:46:55.979 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:46:55.979 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-12 23:47:00.571 +04:00 [INF] Login attempt for user: hashim1@gmai.com
+2025-02-12 23:47:00.748 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-12 23:47:00.749 +04:00 [WRN] Invalid login attempt for user: hashim1@gmai.com
+2025-02-12 23:47:00.749 +04:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-02-12 23:47:00.750 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 4769.8212ms
+2025-02-12 23:47:00.750 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:47:00.750 +04:00 [INF] HTTP POST /api/Auth/login responded 401 in 4784.8785 ms
+2025-02-12 23:47:00.751 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 401 null text/plain; charset=utf-8 4786.1726ms
+2025-02-12 23:47:07.513 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-12 23:47:07.514 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:47:07.515 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 1.0811 ms
+2025-02-12 23:47:07.518 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 5.05ms
+2025-02-12 23:47:07.523 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 51
+2025-02-12 23:47:07.524 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:47:07.525 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:47:07.526 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-12 23:47:12.367 +04:00 [INF] Login attempt for user: hashim1@gmai.com
+2025-02-12 23:47:13.503 +04:00 [INF] Executed DbCommand (76ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-12 23:47:28.250 +04:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+2025-02-12 23:47:52.460 +04:00 [WRN] Invalid login attempt for user: hashim1@gmai.com
+2025-02-12 23:47:52.462 +04:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-02-12 23:47:52.479 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 44952.8222ms
+2025-02-12 23:47:52.486 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:47:52.486 +04:00 [INF] HTTP POST /api/Auth/login responded 401 in 44961.9656 ms
+2025-02-12 23:47:52.490 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 401 null text/plain; charset=utf-8 44966.0459ms
+2025-02-12 23:48:26.720 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-12 23:48:26.730 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:48:26.730 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 0.7604 ms
+2025-02-12 23:48:26.731 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 10.9551ms
+2025-02-12 23:48:26.755 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 49
+2025-02-12 23:48:26.796 +04:00 [INF] CORS policy execution successful.
+2025-02-12 23:48:26.797 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:48:26.799 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-12 23:48:30.276 +04:00 [INF] Login attempt for user: hashim1@gmail.com
+2025-02-12 23:48:30.330 +04:00 [INF] Executed DbCommand (41ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-12 23:48:30.906 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-12 23:48:30.907 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 4108.13ms
+2025-02-12 23:48:30.907 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-12 23:48:30.908 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 4111.9067 ms
+2025-02-12 23:48:30.908 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 4153.4842ms
