@@ -1,0 +1,110 @@
+2025-02-25 09:57:45.404 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-25 09:57:45.403 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-25 09:57:45.658 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:57:45.658 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:57:45.665 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-25 09:57:45.666 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-25 09:57:45.672 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-25 09:57:45.672 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-25 09:57:46.199 +04:00 [INF] Executed DbCommand (139ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-25 09:57:46.199 +04:00 [INF] Executed DbCommand (179ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-25 09:57:46.226 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-25 09:57:46.226 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-25 09:57:46.234 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 559.9746ms
+2025-02-25 09:57:46.234 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-25 09:57:46.234 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 579.3424 ms
+2025-02-25 09:57:46.236 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 560.6536ms
+2025-02-25 09:57:46.236 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-25 09:57:46.236 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 831.9313ms
+2025-02-25 09:57:46.239 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 581.5990 ms
+2025-02-25 09:57:46.253 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 845.5236ms
+2025-02-25 09:58:53.712 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-25 09:58:53.713 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:58:53.715 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-25 09:58:53.715 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-25 09:58:53.729 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-25 09:58:53.729 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:58:53.729 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-25 09:58:53.729 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-25 09:58:53.787 +04:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-25 09:58:53.788 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-25 09:58:53.792 +04:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-25 09:58:53.792 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 69.3772ms
+2025-02-25 09:58:53.793 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-25 09:58:53.793 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-25 09:58:53.793 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 80.3510 ms
+2025-02-25 09:58:53.793 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 63.7603ms
+2025-02-25 09:58:53.793 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-25 09:58:53.793 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 64.4021 ms
+2025-02-25 09:58:53.795 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 66.1536ms
+2025-02-25 09:58:53.798 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 84.9105ms
+2025-02-25 09:59:05.474 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - null null
+2025-02-25 09:59:05.475 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:59:05.493 +04:00 [INF] HTTP OPTIONS /api/Courses/addCourse responded 204 in 18.2344 ms
+2025-02-25 09:59:05.497 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - 204 null null 24.1407ms
+2025-02-25 09:59:05.508 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - application/json 76
+2025-02-25 09:59:05.514 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:59:05.514 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-25 09:59:05.514 +04:00 [INF] Route matched with {action = "AddCourse", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Course]] AddCourse(Course) on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-25 09:59:10.585 +04:00 [INF] Executed DbCommand (83ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Courses] ([CreatedAt], [Description], [Price], [TeacherId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-25 09:59:10.599 +04:00 [INF] Executing CreatedAtActionResult, writing value of type 'Course'.
+2025-02-25 09:59:10.612 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend) in 5096.9973ms
+2025-02-25 09:59:10.612 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-25 09:59:10.613 +04:00 [INF] HTTP POST /api/Courses/addCourse responded 201 in 5098.9497 ms
+2025-02-25 09:59:10.613 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - 201 null application/json; charset=utf-8 5105.4335ms
+2025-02-25 09:59:40.294 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/1 - null null
+2025-02-25 09:59:40.295 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:59:40.306 +04:00 [INF] HTTP OPTIONS /api/Courses/1 responded 204 in 10.6195 ms
+2025-02-25 09:59:40.310 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/1 - 204 null null 16.1197ms
+2025-02-25 09:59:40.326 +04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5120/api/Courses/1 - application/json 131
+2025-02-25 09:59:40.327 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:59:40.329 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.PutCourse (ClickClassroomsBackend)'
+2025-02-25 09:59:40.414 +04:00 [INF] Route matched with {action = "PutCourse", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PutCourse(Int32, Course) on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-25 09:59:40.588 +04:00 [INF] Executed DbCommand (50ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Courses] SET [CreatedAt] = @p0, [Description] = @p1, [Price] = @p2, [TeacherId] = @p3, [Title] = @p4
+OUTPUT 1
+WHERE [Id] = @p5;
+2025-02-25 09:59:40.623 +04:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-25 09:59:40.623 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.PutCourse (ClickClassroomsBackend) in 208.2305ms
+2025-02-25 09:59:40.623 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.PutCourse (ClickClassroomsBackend)'
+2025-02-25 09:59:40.623 +04:00 [INF] HTTP PUT /api/Courses/1 responded 204 in 295.9061 ms
+2025-02-25 09:59:40.623 +04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5120/api/Courses/1 - 204 null null 297.2214ms
+2025-02-25 09:59:45.362 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-25 09:59:45.362 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:59:45.364 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-25 09:59:45.364 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-25 09:59:45.366 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-25 09:59:45.367 +04:00 [INF] CORS policy execution successful.
+2025-02-25 09:59:45.367 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-25 09:59:45.367 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-25 09:59:45.385 +04:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-25 09:59:45.385 +04:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-25 09:59:45.386 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-25 09:59:45.386 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-25 09:59:45.386 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 21.8747ms
+2025-02-25 09:59:45.387 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-25 09:59:45.386 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 19.2148ms
+2025-02-25 09:59:45.387 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 24.3289 ms
+2025-02-25 09:59:45.387 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-25 09:59:45.387 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 24.8754ms
+2025-02-25 09:59:45.387 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 20.1986 ms
+2025-02-25 09:59:45.387 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 20.9483ms

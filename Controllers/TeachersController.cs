@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ClickClassroomsBackend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Teachers")]
     [ApiController]
     public class TeachersController : ControllerBase
     {
@@ -20,7 +20,7 @@ namespace ClickClassroomsBackend.Controllers
         }
 
         // GET: api/Teachers
-        [HttpGet]
+        [HttpGet("getTeachers")]
         public async Task<ActionResult<IEnumerable<Teacher>>> GetTeachers()
         {
             return await _context.Teachers.ToListAsync();

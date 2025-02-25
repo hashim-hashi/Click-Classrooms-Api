@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ClickClassroomsBackend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Courses")]
     [ApiController]
     public class CoursesController : ControllerBase
     {
@@ -20,7 +20,7 @@ namespace ClickClassroomsBackend.Controllers
         }
 
         // GET: api/Courses
-        [HttpGet]
+        [HttpGet("getCourses")]
         public async Task<ActionResult<IEnumerable<Course>>> GetCourses()
         {
             return await _context.Courses.ToListAsync();
@@ -73,8 +73,8 @@ namespace ClickClassroomsBackend.Controllers
 
         // POST: api/Courses
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Course>> PostCourse(Course course)
+        [HttpPost("addCourse")]
+        public async Task<ActionResult<Course>> AddCourse(Course course)
         {
             _context.Courses.Add(course);
             await _context.SaveChangesAsync();

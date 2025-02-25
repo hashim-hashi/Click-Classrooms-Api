@@ -71,3 +71,993 @@ WHERE [u].[Email] = @__loginRequest_Email_0
 2025-02-23 15:17:25.525 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
 2025-02-23 15:17:25.525 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 48754.5544 ms
 2025-02-23 15:17:25.540 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 48765.3452ms
+2025-02-23 15:29:00.203 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 15:29:00.458 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-23 15:29:00.464 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 15:29:00.465 +04:00 [INF] Hosting environment: Development
+2025-02-23 15:29:00.465 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-23 15:29:00.944 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-23 15:29:01.388 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 444.3549ms
+2025-02-23 15:29:02.537 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-23 15:29:02.770 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 233.4856ms
+2025-02-23 15:29:32.818 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-23 15:29:32.836 +04:00 [INF] CORS policy execution successful.
+2025-02-23 15:29:32.841 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 6.4702 ms
+2025-02-23 15:29:32.844 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 25.4912ms
+2025-02-23 15:29:32.847 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 54
+2025-02-23 15:29:32.851 +04:00 [INF] CORS policy execution successful.
+2025-02-23 15:29:33.029 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 15:29:33.084 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-23 15:29:57.424 +04:00 [INF] Login attempt for user: hashim010@gmail.com
+2025-02-23 15:29:57.909 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 15:29:59.026 +04:00 [INF] Executed DbCommand (162ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-23 15:29:59.649 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-23 15:29:59.671 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 26583.4276ms
+2025-02-23 15:29:59.672 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 15:29:59.674 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 26824.0569 ms
+2025-02-23 15:29:59.686 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 26839.4234ms
+2025-02-23 17:27:33.623 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-23 17:27:33.641 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:27:33.645 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 8.2329 ms
+2025-02-23 17:27:33.649 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 26.5283ms
+2025-02-23 17:27:33.651 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 54
+2025-02-23 17:27:33.658 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:27:33.672 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:27:33.686 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-23 17:27:38.027 +04:00 [INF] Login attempt for user: hashim010@gmail.com
+2025-02-23 17:27:38.186 +04:00 [INF] Executed DbCommand (52ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-23 17:27:38.526 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-23 17:27:38.529 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 4842.6035ms
+2025-02-23 17:27:38.529 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:27:38.530 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 4871.7419 ms
+2025-02-23 17:27:38.531 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 4879.2302ms
+2025-02-23 17:29:27.214 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-23 17:29:27.233 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:29:27.234 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 4.0658 ms
+2025-02-23 17:29:27.235 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 21.6247ms
+2025-02-23 17:29:27.250 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 54
+2025-02-23 17:29:27.251 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:29:27.291 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:29:27.292 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-23 17:29:31.353 +04:00 [INF] Login attempt for user: hashim010@gmail.com
+2025-02-23 17:29:31.638 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-23 17:29:31.967 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-23 17:29:31.967 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 4675.2052ms
+2025-02-23 17:29:31.968 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:29:31.968 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 4716.3999 ms
+2025-02-23 17:29:31.969 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 4718.1576ms
+2025-02-23 17:33:24.999 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-23 17:33:25.028 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:33:25.033 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 6.8716 ms
+2025-02-23 17:33:25.039 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 43.7954ms
+2025-02-23 17:33:25.046 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 54
+2025-02-23 17:33:25.048 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:33:25.123 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:33:25.130 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-23 17:33:30.994 +04:00 [INF] Login attempt for user: hashim010@gmail.com
+2025-02-23 17:33:31.118 +04:00 [INF] Executed DbCommand (24ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-23 17:33:31.591 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-23 17:33:31.593 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 6461.983ms
+2025-02-23 17:33:31.594 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:33:31.595 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 6547.1430 ms
+2025-02-23 17:33:31.595 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 6549.6124ms
+2025-02-23 17:58:02.271 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - null null
+2025-02-23 17:58:02.293 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:58:02.299 +04:00 [INF] HTTP OPTIONS /api/Auth/login responded 204 in 9.2455 ms
+2025-02-23 17:58:02.310 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Auth/login - 204 null null 41.2558ms
+2025-02-23 17:58:02.326 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Auth/login - application/json 54
+2025-02-23 17:58:02.327 +04:00 [INF] CORS policy execution successful.
+2025-02-23 17:58:02.339 +04:00 [INF] Executing endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:58:02.349 +04:00 [INF] Route matched with {action = "Login", controller = "AuthContoller"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(LoginRequest) on controller AuthContoller (ClickClassroomsBackend).
+2025-02-23 17:58:10.248 +04:00 [INF] Login attempt for user: hashim010@gmail.com
+2025-02-23 17:58:10.609 +04:00 [INF] Executed DbCommand (96ms) [Parameters=[@__loginRequest_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__loginRequest_Email_0
+2025-02-23 17:58:11.110 +04:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-02-23 17:58:11.116 +04:00 [INF] Executed action AuthContoller.Login (ClickClassroomsBackend) in 8765.4548ms
+2025-02-23 17:58:11.121 +04:00 [INF] Executed endpoint 'AuthContoller.Login (ClickClassroomsBackend)'
+2025-02-23 17:58:11.123 +04:00 [INF] HTTP POST /api/Auth/login responded 200 in 8795.7398 ms
+2025-02-23 17:58:11.124 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Auth/login - 200 null application/json; charset=utf-8 8802.8712ms
+2025-02-23 18:00:56.495 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - null null
+2025-02-23 18:00:56.509 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:00:56.510 +04:00 [INF] HTTP OPTIONS /api/Courses/PostCourse responded 204 in 1.1606 ms
+2025-02-23 18:00:56.511 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - 204 null null 15.7437ms
+2025-02-23 18:00:56.517 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - application/json 48
+2025-02-23 18:00:56.519 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:00:56.520 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:00:56.530 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:00:56.530 +04:00 [INF] HTTP POST /api/Courses/PostCourse responded 405 in 11.0020 ms
+2025-02-23 18:00:56.532 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - 405 0 null 14.413ms
+2025-02-23 18:05:39.854 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - null null
+2025-02-23 18:05:39.855 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:05:39.861 +04:00 [INF] HTTP OPTIONS /api/Courses/PostCourse responded 204 in 5.3303 ms
+2025-02-23 18:05:39.862 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - 204 null null 8.1617ms
+2025-02-23 18:05:39.870 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - application/json 48
+2025-02-23 18:05:39.871 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:05:39.873 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:05:39.875 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:05:39.875 +04:00 [INF] HTTP POST /api/Courses/PostCourse responded 405 in 4.5219 ms
+2025-02-23 18:05:39.876 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - 405 0 null 5.937ms
+2025-02-23 18:08:04.086 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 18:08:04.517 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-23 18:08:04.532 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 18:08:04.535 +04:00 [INF] Hosting environment: Development
+2025-02-23 18:08:04.536 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-23 18:08:05.614 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-23 18:08:06.275 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 668.3888ms
+2025-02-23 18:08:06.504 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-23 18:08:06.777 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 273.4759ms
+2025-02-23 18:08:21.019 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - null null
+2025-02-23 18:08:21.070 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:08:21.098 +04:00 [INF] HTTP OPTIONS /api/Courses/PostCourse responded 204 in 42.9777 ms
+2025-02-23 18:08:21.106 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - 204 null null 86.3932ms
+2025-02-23 18:08:21.117 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - application/json 48
+2025-02-23 18:08:21.136 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:08:21.356 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:08:21.356 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:08:21.357 +04:00 [INF] HTTP POST /api/Courses/PostCourse responded 405 in 226.3824 ms
+2025-02-23 18:08:21.359 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - 405 0 null 242.0601ms
+2025-02-23 18:08:37.117 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - null null
+2025-02-23 18:08:37.119 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:08:37.121 +04:00 [INF] HTTP OPTIONS /api/Courses/PostCourse responded 204 in 2.1049 ms
+2025-02-23 18:08:37.121 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - 204 null null 3.806ms
+2025-02-23 18:08:37.125 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - application/json 44
+2025-02-23 18:08:37.126 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:08:37.131 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:08:37.132 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:08:37.132 +04:00 [INF] HTTP POST /api/Courses/PostCourse responded 405 in 6.4290 ms
+2025-02-23 18:08:37.134 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - 405 0 null 7.83ms
+2025-02-23 18:10:36.110 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 18:10:36.569 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-23 18:10:36.575 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 18:10:36.577 +04:00 [INF] Hosting environment: Development
+2025-02-23 18:10:36.577 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-23 18:10:36.930 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-23 18:10:37.525 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 597.8704ms
+2025-02-23 18:10:37.844 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-23 18:10:38.124 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 281.6598ms
+2025-02-23 18:10:49.089 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - null null
+2025-02-23 18:10:49.107 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:10:49.115 +04:00 [INF] HTTP OPTIONS /api/Courses/PostCourse responded 204 in 12.9355 ms
+2025-02-23 18:10:49.117 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/PostCourse - 204 null null 28.2399ms
+2025-02-23 18:10:49.126 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - application/json 43
+2025-02-23 18:10:49.131 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:10:49.398 +04:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:10:49.399 +04:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-02-23 18:10:49.400 +04:00 [INF] HTTP POST /api/Courses/PostCourse responded 405 in 269.2727 ms
+2025-02-23 18:10:49.403 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/PostCourse - 405 0 null 276.8976ms
+2025-02-23 18:11:44.053 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - null null
+2025-02-23 18:11:44.057 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:11:44.058 +04:00 [INF] HTTP OPTIONS /api/Courses/addCourse responded 204 in 3.1273 ms
+2025-02-23 18:11:44.059 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - 204 null null 5.6353ms
+2025-02-23 18:11:44.082 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - application/json 45
+2025-02-23 18:11:44.135 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:11:44.138 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 18:11:44.304 +04:00 [INF] Route matched with {action = "AddCourse", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Course]] AddCourse(Course) on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 18:12:01.627 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-23 18:12:01.714 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend) in 17403.1587ms
+2025-02-23 18:12:01.714 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 18:12:01.715 +04:00 [INF] HTTP POST /api/Courses/addCourse responded 400 in 17579.7543 ms
+2025-02-23 18:12:01.719 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - 400 null application/problem+json; charset=utf-8 17636.6849ms
+2025-02-23 18:12:59.508 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - null null
+2025-02-23 18:12:59.526 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:12:59.532 +04:00 [INF] HTTP OPTIONS /api/Courses/addCourse responded 204 in 6.0656 ms
+2025-02-23 18:12:59.543 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - 204 null null 24.8858ms
+2025-02-23 18:12:59.547 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - application/json 45
+2025-02-23 18:12:59.548 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:12:59.565 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 18:12:59.567 +04:00 [INF] Route matched with {action = "AddCourse", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Course]] AddCourse(Course) on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 18:12:59.703 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-23 18:12:59.705 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend) in 136.3133ms
+2025-02-23 18:12:59.707 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 18:12:59.707 +04:00 [INF] HTTP POST /api/Courses/addCourse responded 400 in 158.8472 ms
+2025-02-23 18:12:59.708 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - 400 null application/problem+json; charset=utf-8 160.594ms
+2025-02-23 18:13:10.800 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - null null
+2025-02-23 18:13:10.802 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:13:10.803 +04:00 [INF] HTTP OPTIONS /api/Courses/addCourse responded 204 in 1.4355 ms
+2025-02-23 18:13:10.805 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - 204 null null 4.7729ms
+2025-02-23 18:13:10.812 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - application/json 45
+2025-02-23 18:13:10.813 +04:00 [INF] CORS policy execution successful.
+2025-02-23 18:13:10.814 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 18:13:10.815 +04:00 [INF] Route matched with {action = "AddCourse", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Course]] AddCourse(Course) on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 18:13:10.843 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-23 18:13:10.844 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend) in 28.8719ms
+2025-02-23 18:13:10.845 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 18:13:10.845 +04:00 [INF] HTTP POST /api/Courses/addCourse responded 400 in 32.3614 ms
+2025-02-23 18:13:10.852 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - 400 null application/problem+json; charset=utf-8 40.3148ms
+2025-02-23 23:23:52.276 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - null null
+2025-02-23 23:23:52.293 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:23:52.295 +04:00 [INF] HTTP OPTIONS /api/Courses/addCourse responded 204 in 4.1962 ms
+2025-02-23 23:23:52.304 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - 204 null null 24.9566ms
+2025-02-23 23:23:52.343 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - application/json 77
+2025-02-23 23:23:52.345 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:23:52.350 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 23:23:52.360 +04:00 [INF] Route matched with {action = "AddCourse", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Course]] AddCourse(Course) on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:23:52.411 +04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-23 23:23:52.413 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend) in 52.4499ms
+2025-02-23 23:23:52.414 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 23:23:52.414 +04:00 [INF] HTTP POST /api/Courses/addCourse responded 400 in 69.4703 ms
+2025-02-23 23:23:52.414 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - 400 null application/problem+json; charset=utf-8 100.4762ms
+2025-02-23 23:27:43.193 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 23:27:43.835 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-23 23:27:43.858 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 23:27:43.861 +04:00 [INF] Hosting environment: Development
+2025-02-23 23:27:43.861 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-23 23:27:44.930 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-23 23:27:45.348 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 426.7477ms
+2025-02-23 23:27:45.776 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-23 23:27:46.002 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 227.5328ms
+2025-02-23 23:28:09.762 +04:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - null null
+2025-02-23 23:28:09.844 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:28:09.857 +04:00 [INF] HTTP OPTIONS /api/Courses/addCourse responded 204 in 20.9362 ms
+2025-02-23 23:28:09.859 +04:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5120/api/Courses/addCourse - 204 null null 97.5192ms
+2025-02-23 23:28:09.864 +04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - application/json 77
+2025-02-23 23:28:09.872 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:28:10.089 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 23:28:10.137 +04:00 [INF] Route matched with {action = "AddCourse", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Course]] AddCourse(Course) on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:28:54.242 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 23:28:56.300 +04:00 [ERR] Failed executing DbCommand (229ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p3='?' (DbType = Int32), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Courses] ([CreatedAt], [Description], [Price], [TeacherId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-02-23 23:28:56.543 +04:00 [ERR] An exception occurred in the database while saving changes for context type 'AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-02-23 23:28:56.885 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend) in 46737.6603ms
+2025-02-23 23:28:56.892 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.AddCourse (ClickClassroomsBackend)'
+2025-02-23 23:28:56.899 +04:00 [ERR] HTTP POST /api/Courses/addCourse responded 500 in 47027.4644 ms
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.AddCourse(Course course) in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 80
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-02-23 23:28:56.966 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.AddCourse(Course course) in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 80
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-02-23 23:28:57.037 +04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5120/api/Courses/addCourse - 500 null text/plain; charset=utf-8 47172.464ms
+2025-02-23 23:30:17.043 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:30:17.045 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:30:17.060 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:30:17.070 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:30:18.578 +04:00 [ERR] Failed executing DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:30:18.595 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:30:18.785 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 1714.0394ms
+2025-02-23 23:30:18.786 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:30:18.787 +04:00 [ERR] HTTP GET /api/Courses/getCourses responded 500 in 1742.7967 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.GetCourses() in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 26
+   at lambda_method86(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:30:18.809 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.GetCourses() in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 26
+   at lambda_method86(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:30:18.830 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 500 null text/plain; charset=utf-8 1787.402ms
+2025-02-23 23:30:22.349 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:30:22.350 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:30:22.355 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:30:22.356 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:30:22.414 +04:00 [ERR] Failed executing DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:30:22.416 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:30:22.560 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 204.1323ms
+2025-02-23 23:30:22.561 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:30:22.562 +04:00 [ERR] HTTP GET /api/Courses/getCourses responded 500 in 212.4109 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.GetCourses() in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 26
+   at lambda_method86(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:30:22.576 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.GetCourses() in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 26
+   at lambda_method86(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:30:22.596 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 500 null text/plain; charset=utf-8 247.546ms
+2025-02-23 23:30:41.953 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:30:41.954 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:30:41.955 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:30:41.955 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:30:54.605 +04:00 [ERR] Failed executing DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:30:54.611 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:31:13.984 +04:00 [ERR] Failed executing DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:31:13.995 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:31:14.088 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 32132.3835ms
+2025-02-23 23:31:14.089 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:31:14.090 +04:00 [ERR] HTTP GET /api/Courses/getCourses responded 500 in 32135.5954 ms
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.GetCourses() in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 26
+   at lambda_method86(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:31:14.103 +04:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Title'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at ClickClassroomsBackend.Controllers.CoursesController.GetCourses() in c:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend\Controllers\CoursesController.cs:line 26
+   at lambda_method86(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:6b836780-e231-497d-b369-b2068b41c7c1
+Error Number:207,State:1,Class:16
+2025-02-23 23:31:14.118 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 500 null text/plain; charset=utf-8 32165.514ms
+2025-02-23 23:33:07.411 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 23:33:07.741 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 23:34:57.654 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 23:35:45.584 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 23:36:01.890 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 23:36:02.685 +04:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-23 23:36:02.706 +04:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-02-23 23:36:02.741 +04:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_getapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session', @LockMode = 'Exclusive';
+SELECT @result
+2025-02-23 23:36:02.890 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+2025-02-23 23:36:02.919 +04:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2025-02-23 23:36:02.927 +04:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2025-02-23 23:36:02.947 +04:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2025-02-23 23:36:02.987 +04:00 [INF] Applying migration '20250223193547_InitialCreate1'.
+2025-02-23 23:36:03.706 +04:00 [INF] Executed DbCommand (699ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+EXEC sp_rename N'[Courses].[Name]', N'Title', 'COLUMN';
+2025-02-23 23:36:03.731 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20250223193547_InitialCreate1', N'9.0.1');
+2025-02-23 23:36:03.753 +04:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DECLARE @result int;
+EXEC @result = sp_releaseapplock @Resource = '__EFMigrationsLock', @LockOwner = 'Session';
+SELECT @result
+2025-02-23 23:52:56.756 +04:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-02-23 23:52:57.403 +04:00 [INF] Now listening on: http://localhost:5120
+2025-02-23 23:52:57.410 +04:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-23 23:52:57.412 +04:00 [INF] Hosting environment: Development
+2025-02-23 23:52:57.412 +04:00 [INF] Content root path: C:\Users\Lenovo\Desktop\Sahla's Online Tution Project\ClickClassroomsBackend
+2025-02-23 23:52:58.399 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/index.html - null null
+2025-02-23 23:52:59.120 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/index.html - 200 null text/html;charset=utf-8 747.6063ms
+2025-02-23 23:52:59.406 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - null null
+2025-02-23 23:52:59.686 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 280.6634ms
+2025-02-23 23:53:05.023 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:53:05.026 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-23 23:53:05.067 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:53:05.081 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:53:05.407 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:53:05.407 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:53:05.498 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:53:05.498 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-23 23:53:13.576 +04:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Course'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-02-23 23:53:19.318 +04:00 [INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-23 23:53:19.633 +04:00 [ERR] An exception occurred while iterating over the results of a query for context type 'AppDbContext'.
+System.Threading.ThreadAbortException: System error.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.PropertyCounts.get_OriginalValueCount()
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.IRuntimeEntityType.get_OriginalValueCount()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.OriginalValuesFactoryFactory.GetPropertyCount(IRuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.SnapshotFactoryFactory.CreateConstructorExpression(IRuntimeEntityType entityType, Expression parameter)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.SnapshotFactoryFactory`1.CreateExpression(IRuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.SnapshotFactoryFactory`1.Create(IRuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType.<>c.<Microsoft.EntityFrameworkCore.Metadata.Internal.IRuntimeEntityType.get_OriginalValuesFactory>b__200_0(RuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.Internal.NonCapturingLazyInitializer.EnsureInitialized[TParam,TValue](TValue& target, TParam param, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType.Microsoft.EntityFrameworkCore.Metadata.Internal.IRuntimeEntityType.get_OriginalValuesFactory()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.OriginalValues..ctor(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.EnsureOriginalValues()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntrySubscriber.SnapshotAndSubscribe(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTrackingFromQuery(IEntityType baseEntityType, Object entity, ISnapshot& snapshot)
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.StartTracking(IEntityType entityType, Object entity, ISnapshot& snapshot)
+   at lambda_method38(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+System.Threading.ThreadAbortException: System error.
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.PropertyCounts.get_OriginalValueCount()
+   at Microsoft.EntityFrameworkCore.Metadata.Internal.IRuntimeEntityType.get_OriginalValueCount()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.OriginalValuesFactoryFactory.GetPropertyCount(IRuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.SnapshotFactoryFactory.CreateConstructorExpression(IRuntimeEntityType entityType, Expression parameter)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.SnapshotFactoryFactory`1.CreateExpression(IRuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.SnapshotFactoryFactory`1.Create(IRuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType.<>c.<Microsoft.EntityFrameworkCore.Metadata.Internal.IRuntimeEntityType.get_OriginalValuesFactory>b__200_0(RuntimeEntityType entityType)
+   at Microsoft.EntityFrameworkCore.Internal.NonCapturingLazyInitializer.EnsureInitialized[TParam,TValue](TValue& target, TParam param, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Metadata.RuntimeEntityType.Microsoft.EntityFrameworkCore.Metadata.Internal.IRuntimeEntityType.get_OriginalValuesFactory()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.OriginalValues..ctor(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.EnsureOriginalValues()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntrySubscriber.SnapshotAndSubscribe(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTrackingFromQuery(IEntityType baseEntityType, Object entity, ISnapshot& snapshot)
+   at Microsoft.EntityFrameworkCore.Query.QueryContext.StartTracking(IEntityType entityType, Object entity, ISnapshot& snapshot)
+   at lambda_method38(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2025-02-23 23:53:29.922 +04:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:53:29.922 +04:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-23 23:53:29.952 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:53:29.967 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:53:29.990 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 24482.5502ms
+2025-02-23 23:53:29.990 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 24484.8918ms
+2025-02-23 23:53:29.992 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:53:29.992 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:53:29.999 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 24947.0040 ms
+2025-02-23 23:53:29.999 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 24949.7222 ms
+2025-02-23 23:53:30.020 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 24996.8685ms
+2025-02-23 23:53:30.020 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 24993.7617ms
+2025-02-23 23:54:10.623 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:54:10.641 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-23 23:54:10.642 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:54:10.642 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:54:10.650 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:54:10.650 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:54:10.651 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-23 23:54:10.652 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:54:14.860 +04:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-23 23:54:14.861 +04:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:54:14.863 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:54:14.863 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:54:14.865 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 4212.3725ms
+2025-02-23 23:54:14.865 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 4212.7088ms
+2025-02-23 23:54:14.865 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:54:14.865 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:54:14.865 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 4224.3282 ms
+2025-02-23 23:54:14.865 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 4223.7456 ms
+2025-02-23 23:54:14.867 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 4225.4996ms
+2025-02-23 23:54:14.867 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 4244.0143ms
+2025-02-23 23:54:34.492 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:54:34.495 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-23 23:54:34.495 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:54:34.495 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:54:34.496 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:54:34.496 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:54:34.496 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-23 23:54:34.496 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:54:40.329 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-23 23:54:40.329 +04:00 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:54:40.330 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:54:40.330 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:54:40.331 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 5834.8656ms
+2025-02-23 23:54:40.331 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 5834.7389ms
+2025-02-23 23:54:40.331 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:54:40.331 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:54:40.331 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 5836.1155 ms
+2025-02-23 23:54:40.332 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 5836.6129 ms
+2025-02-23 23:54:40.332 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 5839.951ms
+2025-02-23 23:54:40.332 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 5837.0191ms
+2025-02-23 23:56:44.023 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:56:44.035 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-23 23:56:44.044 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:56:44.044 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:56:44.045 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:56:44.045 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:56:44.046 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:56:44.046 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-23 23:56:48.345 +04:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-23 23:56:48.345 +04:00 [INF] Executed DbCommand (39ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:56:48.357 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:56:48.358 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:56:48.373 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 4326.744ms
+2025-02-23 23:56:48.374 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:56:48.374 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 4330.1405 ms
+2025-02-23 23:56:48.376 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 4329.9019ms
+2025-02-23 23:56:48.377 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 4353.3599ms
+2025-02-23 23:56:48.378 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:56:48.378 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 4338.5363 ms
+2025-02-23 23:56:48.379 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 4344.5049ms
+2025-02-23 23:59:01.000 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:59:01.001 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:59:01.001 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:59:01.022 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:59:27.604 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-23 23:59:27.606 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:59:27.606 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:59:27.607 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-23 23:59:29.142 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - null null
+2025-02-23 23:59:29.142 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:59:29.143 +04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - null null
+2025-02-23 23:59:29.143 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:59:29.147 +04:00 [INF] CORS policy execution successful.
+2025-02-23 23:59:29.147 +04:00 [INF] Route matched with {action = "GetTeachers", controller = "Teachers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Teacher]]] GetTeachers() on controller ClickClassroomsBackend.Controllers.TeachersController (ClickClassroomsBackend).
+2025-02-23 23:59:29.147 +04:00 [INF] Executing endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:59:29.160 +04:00 [INF] Route matched with {action = "GetCourses", controller = "Courses"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Course]]] GetCourses() on controller ClickClassroomsBackend.Controllers.CoursesController (ClickClassroomsBackend).
+2025-02-23 23:59:33.657 +04:00 [INF] Executed DbCommand (4,257ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-23 23:59:33.657 +04:00 [INF] Executed DbCommand (4,366ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:59:33.668 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:59:33.671 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:59:33.695 +04:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[Age], [t].[Name]
+FROM [Teachers] AS [t]
+2025-02-23 23:59:33.731 +04:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Price], [c].[TeacherId], [c].[Title]
+FROM [Courses] AS [c]
+2025-02-23 23:59:33.731 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Course, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:59:33.736 +04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Teacher, ClickClassroomsBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-23 23:59:33.736 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 4589.1638ms
+2025-02-23 23:59:33.736 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 4550.0389ms
+2025-02-23 23:59:33.736 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:59:33.736 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:59:33.736 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 4594.1796 ms
+2025-02-23 23:59:33.736 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 4590.0411 ms
+2025-02-23 23:59:33.737 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 200 null application/json; charset=utf-8 4594.0461ms
+2025-02-23 23:59:33.737 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 200 null application/json; charset=utf-8 4595.2268ms
+2025-02-23 23:59:33.761 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend) in 32736.6953ms
+2025-02-23 23:59:33.761 +04:00 [INF] Executed action ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend) in 6153.6706ms
+2025-02-23 23:59:33.761 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.CoursesController.GetCourses (ClickClassroomsBackend)'
+2025-02-23 23:59:33.761 +04:00 [INF] Executed endpoint 'ClickClassroomsBackend.Controllers.TeachersController.GetTeachers (ClickClassroomsBackend)'
+2025-02-23 23:59:33.761 +04:00 [INF] HTTP GET /api/Courses/getCourses responded 200 in 32760.3877 ms
+2025-02-23 23:59:33.761 +04:00 [INF] HTTP GET /api/Teachers/getTeachers responded 200 in 6155.6773 ms
+2025-02-23 23:59:33.761 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Teachers/getTeachers - 499 null application/json; charset=utf-8 6156.8709ms
+2025-02-23 23:59:33.761 +04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5120/api/Courses/getCourses - 499 null application/json; charset=utf-8 32765.2936ms
